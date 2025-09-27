@@ -12,28 +12,73 @@
       <h1>Chimdumebi Nebolisa</h1>
       <nav class="site-nav">
         <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#publications">Publications</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section id="projects" class="card">
+
+    <section id="projects" class="card projects-section">
       <h2>Projects</h2>
-      <p>Highlight key projects here. Describe your role, the tech stack, and the impact of each project.</p>
+      <p>
+        Highlight key projects here. Describe your role, the tech stack, and the impact of each project.
+      </p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Schedulist</h3>
+          <p>
+            Designed an intelligent scheduling assistant that coordinates study groups and club
+            meetings, automatically resolving conflicts and syncing with shared calendars for a
+            seamless planning experience.
+          </p>
+          <p class="project-tech"><strong>Tech Stack:</strong> React, TypeScript, Node.js, Express, PostgreSQL, AWS Lambda</p>
+        </article>
+
+        <article class="project-card">
+          <h3>ZipXpress</h3>
+          <p>
+            Built a logistics optimization dashboard that consolidates regional carrier data, provides
+            real-time parcel tracking, and recommends the most cost-effective shipping routes for
+            small businesses.
+          </p>
+          <p class="project-tech"><strong>Tech Stack:</strong> Python, Django, Celery, Redis, PostgreSQL, AWS S3</p>
+        </article>
+
+        <!-- Additional project cards can be added below -->
+        <article class="project-card project-placeholder">
+          <h3>Upcoming Project</h3>
+          <p>Details coming soon. Stay tuned for more updates.</p>
+        </article>
+      </div>
+
+    <section id="home" class="card hero">
+      <h2>Welcome</h2>
+      <p class="hero-name">Chimdumebi Nebolisa</p>
+      <p class="hero-tagline">Computer science student, aspiring product builder, and community advocate.</p>
+
     </section>
 
-    <section id="certifications" class="card">
-      <h2>Certifications</h2>
-      <p>List professional certifications, courses, or training that showcase your expertise.</p>
+    <section id="about" class="card about">
+      <h2>About Me</h2>
+      <p>
+        I am a computer science student at Boise State University who is passionate about using technology to create accessible, human-centered solutions. I enjoy working at the intersection of product design, data, and engineering to craft experiences that solve real problems and empower the people who use them.
+      </p>
+      <p>
+        My professional journey has included leading research and product initiatives focused on accessibility, mentoring students who are curious about technology, and collaborating across disciplines to ship thoughtful solutions. I thrive in environments where I can combine creativity with analytical thinking, and I am always eager to learn new tools that help teams deliver meaningful products.
+      </p>
+      <p>
+        Beyond the classroom and workplace, I dedicate time to community-building efforts that champion diversity in tech. Whether I am facilitating workshops, organizing events, or contributing to open-source projects, I aim to uplift others and make technology more inclusive.
+      </p>
     </section>
 
-    <section id="publications" class="card">
-      <h2>Publications</h2>
-      <p>Share academic papers, articles, talks, or other public-facing work you’ve authored.</p>
+    <section id="projects" class="card projects">
+      <h2>Projects</h2>
+      <p>Explore selected projects that highlight my work across software development, research, and community impact.</p>
+      <div class="project-grid"></div>
     </section>
   </main>
 
