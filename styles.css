@@ -75,7 +75,8 @@ a {
 
 main {
   padding: 3rem 0;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -111,11 +112,7 @@ main {
   font-size: 0.95rem;
 }
 
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/* Maintain a single-column layout across viewport sizes */
 
 @media (prefers-reduced-motion: reduce) {
   * {
