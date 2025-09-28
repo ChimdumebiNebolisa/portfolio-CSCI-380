@@ -61,12 +61,31 @@ a:focus {
 .site-header {
   background: var(--header-bg);
   color: var(--header-text);
-  padding: 2rem 0 1rem;
+  padding: 2.5rem 0 1.5rem;
   position: sticky;
   top: 0;
   z-index: 10;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
+
+
+.site-header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.site-branding h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+}
+
+.site-tagline {
+  margin: 0.35rem 0 0;
+  font-size: 1.05rem;
+  color: rgba(249, 250, 251, 0.85);
 
 
 .site-header__inner {
@@ -96,6 +115,7 @@ a:focus {
 .site-title a {
   color: inherit;
   text-decoration: none;
+
 }
 
 .site-nav ul {
@@ -121,6 +141,59 @@ a:focus {
   color: var(--header-text);
   transform: translateY(-2px);
 }
+
+
+.site-main {
+  flex: 1;
+  padding: 3rem 0 4rem;
+}
+
+.section {
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: var(--card-shadow);
+  padding: 2.5rem clamp(1.5rem, 4vw, 3rem);
+}
+
+.section + .section {
+  margin-top: 2.5rem;
+}
+
+.section h1,
+.section h2,
+.section h3 {
+  margin-top: 0;
+  color: var(--header-bg);
+}
+
+.section__tagline {
+  margin-top: 0.75rem;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.section--intro {
+  text-align: center;
+}
+
+.section--intro h2 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: 1.5rem;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin: 0;
+  color: var(--muted);
 
 
 .site-main {
@@ -445,6 +518,7 @@ main {
 
 .project-card p {
   margin: 0;
+
 }
 
 .project-card .project-tech {
@@ -481,6 +555,7 @@ main {
 
 
 
+
 /* Maintain a single-column layout across viewport sizes */
 
 @media (min-width: 768px) {
@@ -498,6 +573,7 @@ main {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
 
 
 
