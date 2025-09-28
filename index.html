@@ -3,46 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chimdumebi Nebolisa | Portfolio</title>
+  <title>Chimdumebi Mitchell Nebolisa | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Chimdumebi Nebolisa</h1>
+      <h1>Chimdumebi Mitchell Nebolisa</h1>
       <nav class="site-nav">
         <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#publications">Publications</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section id="projects" class="card">
+    <section id="home" class="section section-home">
+      <h2 class="visually-hidden">Home</h2>
+      <p class="home-tagline">Computer Science Student | Aspiring Software Engineer</p>
+      <p class="home-summary">
+        I craft full-stack solutions that balance thoughtful design with dependable engineering, focusing on accessible,
+        user-friendly experiences.
+      </p>
+    </section>
+
+    <section id="about" class="section section-about">
+      <h2>About Me</h2>
+      <p>
+        I am an international student from Nigeria studying Computer Science at East Texas A&amp;M University, with an expected
+        graduation in May 2027. Alongside my academics, I serve as a Resident Assistant, where I manage health and safety inspections,
+        support 30+ residents, and organize community events.
+      </p>
+      <p>
+        I have hands-on experience in full-stack development using technologies like React, Node.js, Flask, Python, SQL, HTML, CSS, and
+        JavaScript. My work includes building responsive front-end interfaces and deploying secure, scalable back-end systems. I am also
+        certified in Responsive Web Design through FreeCodeCamp.
+      </p>
+      <p>
+        Beyond coursework and projects, I’ve worked as a Web Developer at FashionFlow Styles in Nigeria, officiated intramural sports,
+        and remain active in the African Students Association. My goal is to apply technology to solve real-world problems and contribute
+        to closing the digital divide.
+      </p>
+    </section>
+
+    <section id="projects" class="section section-projects">
       <h2>Projects</h2>
-      <p>Highlight key projects here. Describe your role, the tech stack, and the impact of each project.</p>
-    </section>
-
-    <section id="certifications" class="card">
-      <h2>Certifications</h2>
-      <p>List professional certifications, courses, or training that showcase your expertise.</p>
-    </section>
-
-    <section id="publications" class="card">
-      <h2>Publications</h2>
-      <p>Share academic papers, articles, talks, or other public-facing work you’ve authored.</p>
+      <article class="project">
+        <h3>Schedulist</h3>
+        <p>
+          A web-based Eisenhower Matrix scheduling and task management app designed to help users prioritize tasks by urgency and
+          importance. Built with Flask, SQLAlchemy, PostgreSQL, and Google OAuth, and deployed on Render for persistent cloud storage.
+        </p>
+      </article>
+      <article class="project">
+        <h3>ZipXpress</h3>
+        <p>
+          A mock delivery service landing page built with React, JavaScript, Tailwind CSS, and Node.js. Focused on creating a responsive,
+          user-friendly design to simulate a professional delivery platform.
+        </p>
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Chimdumebi Nebolisa. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Chimdumebi Mitchell Nebolisa. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
